@@ -1,0 +1,18 @@
+Earthquake Forecasting Model Evaluation
+=====================================
+
+Earthquake Count Model (RandomForestRegressor):
+- Training RMSE: 3.33
+- Testing RMSE: 12.56
+- Training MAE: 1.66
+- Testing MAE: 4.21
+- Training R²: 0.76
+- Testing R²: -0.05
+
+Earthquake Magnitude Model (RandomForestRegressor):
+- Training RMSE: 0.38
+- Testing RMSE: 0.50
+- Training MAE: 0.29
+- Testing MAE: 0.35
+- Training R²: 0.45
+- Testing R²: 0.05

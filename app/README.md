@@ -1,0 +1,2 @@
+# earthquakeForecast
+# EarthquakesAI

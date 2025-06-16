@@ -1,0 +1,17 @@
+count_lag_1
+avg_mag_lag_1
+max_mag_lag_1
+count_lag_3
+avg_mag_lag_3
+max_mag_lag_3
+count_lag_6
+avg_mag_lag_6
+max_mag_lag_6
+count_roll_3
+avg_mag_roll_3
+max_mag_roll_3
+count_roll_6
+avg_mag_roll_6
+max_mag_roll_6
+month_sin
+month_cos
