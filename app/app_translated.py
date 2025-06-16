@@ -9,7 +9,13 @@ import joblib
 import os
 import sys
 import locale
-locale.setlocale(locale.LC_TIME, 'ru_RU.UTF-8') 
+
+# Пытаемся установить российскую локаль, если доступно
+try:
+    locale.setlocale(locale.LC_TIME, 'ru_RU.UTF-8')
+except locale.Error:
+    # Если локаль недоступна — оставляем системную по умолчанию
+    locale.setlocale(locale.LC_TIME, '')
 
 # Set page configuration
 st.set_page_config(
