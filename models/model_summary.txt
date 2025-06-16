@@ -1,0 +1,69 @@
+Earthquake Forecasting Model Summary
+==================================
+
+Generated on: 2025-04-06 07:40:20
+
+Dataset Information:
+- Total earthquakes: 1639
+- Time range: 1972-10-01 to 2023-09-01
+- Monthly data points for modeling: 377
+
+Features Used:
+- count_lag_1
+- avg_mag_lag_1
+- max_mag_lag_1
+- count_lag_3
+- avg_mag_lag_3
+- max_mag_lag_3
+- count_lag_6
+- avg_mag_lag_6
+- max_mag_lag_6
+- count_roll_3
+- avg_mag_roll_3
+- max_mag_roll_3
+- count_roll_6
+- avg_mag_roll_6
+- max_mag_roll_6
+- month_sin
+- month_cos
+
+Earthquake Forecasting Model Evaluation
+=====================================
+
+Earthquake Count Model (RandomForestRegressor):
+- Training RMSE: 3.33
+- Testing RMSE: 12.56
+- Training MAE: 1.66
+- Testing MAE: 4.21
+- Training R²: 0.76
+- Testing R²: -0.05
+
+Earthquake Magnitude Model (RandomForestRegressor):
+- Training RMSE: 0.38
+- Testing RMSE: 0.50
+- Training MAE: 0.29
+- Testing MAE: 0.35
+- Training R²: 0.45
+- Testing R²: 0.05
+
+Prediction Summary for Next 6 Months:
+- 2023-10: 3 earthquakes, max magnitude 4.9
+- 2023-11: 4 earthquakes, max magnitude 4.8
+- 2023-12: 4 earthquakes, max magnitude 4.8
+- 2024-01: 5 earthquakes, max magnitude 4.9
+- 2024-02: 4 earthquakes, max magnitude 4.8
+- 2024-03: 29 earthquakes, max magnitude 5.1
+
+Model Limitations:
+- The model is based on historical patterns and may not account for unexpected geological changes
+- Predictions are more reliable for the near future and uncertainty increases with time
+- The model predicts monthly aggregates, not individual earthquake events
+- Spatial information is not fully utilized in the current time-series approach
+- The model does not incorporate geological or tectonic information that might improve predictions
+
+Recommendations for Improvement:
+- Incorporate spatial clustering and fault line information
+- Include additional data sources such as ground deformation, seismic wave velocity changes, etc.
+- Experiment with deep learning approaches for sequence modeling
+- Develop ensemble models combining multiple forecasting approaches
+- Implement probabilistic forecasting to better quantify uncertainty

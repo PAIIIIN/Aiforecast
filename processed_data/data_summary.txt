@@ -1,0 +1,42 @@
+Earthquake Data Processing Summary
+================================
+
+Processing date: 2025-04-06 07:28:21
+
+Original Data:
+- Recent dataset: 520 records (1970-06-05 04:53:08.070000+00:00 to 2024-01-30 03:52:36.555000+00:00)
+- Historical dataset: 613787 records (2000-01-01 01:19:26.990000+00:00 to 2023-02-12 22:53:27.888000+00:00)
+
+Processed Data (Almaty Region - 500km radius):
+- Recent dataset: 520 records
+- Historical dataset: 1359 records
+- Combined dataset: 1639 records
+
+Date Range:
+- From: 1970-06-05 04:53:08.070000+00:00
+- To: 2024-01-30 03:52:36.555000+00:00
+
+Magnitude Statistics:
+- Min: 3.0
+- Max: 7.3
+- Mean: 4.43
+- Median: 4.4
+
+Depth Statistics (km):
+- Min: 0.0
+- Max: 104.6
+- Mean: 26.49
+- Median: 26.7
+
+Processing Steps:
+1. Calculated distance from Almaty for each earthquake
+2. Filtered earthquakes within 500km of Almaty
+3. Handled missing values (filled missing depths, removed records with missing magnitudes)
+4. Added time-based features (year, month, day, etc.)
+5. Merged datasets and removed duplicates
+6. Sorted by time
+
+Files Created:
+- recent_almaty_region.csv: Recent earthquakes within 500km of Almaty
+- historical_almaty_region.csv: Historical earthquakes within 500km of Almaty
+- all_almaty_region_earthquakes.csv: Combined dataset of all earthquakes in the Almaty region
