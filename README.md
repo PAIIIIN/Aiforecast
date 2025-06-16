@@ -1,0 +1,2 @@
+# ForecastingEqAI
+# EarthquakesAI
